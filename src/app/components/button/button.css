@@ -1,0 +1,9 @@
+.btn {
+  font-size: var(--font-size-body);
+  padding: 1.2rem 4rem;
+  background-color: var(--color-bg-brand);
+  color: var(--color-text-invert-primary);
+  font-weight: 500;
+  border-radius: var(--font-size-borderRadius);
+  width: max-content;
+}

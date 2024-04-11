@@ -3,31 +3,63 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  font-size: 62.5%;
+
+  /* Font Sizes  */
+  --font-size-title: 10.7rem;
+  --font-size-heading: 6.7rem;
+  --font-size-subHeading: 4.4rem;
+  --font-size-description: 2.4rem;
+  --font-size-subdescription: 1.8rem;
+  --font-size-body: 1.8rem;
+  --font-size-caption: 1.4rem;
+  --font-size-borderRadius: 0.8rem;
+
+  /* Color Styles  */
+
+  --color-bg-body: #f5fafc;
+  --color-bg-brand: #ab5411;
+  --color-bg-Secondary-brand: #f9dccd;
+  --color-text-primary: #1a1a1a;
+  --color-text-invert-primary: #fff;
+  --color-text-secondary: #4a4a4a;
+  --color-text-brand: #ab5411;
+  --color-bg-btn: #eee5e5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
+
+/* .flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.8rem;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-body);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  font-size: var(--font-size-title);
+}
+
+h2 {
+  font-size: var(--font-size-heading);
+}
+
+h3 {
+  font-size: var(--font-size-subHeading);
+}
+
+h4 {
+  font-size: var(--font-size-description);
 }
